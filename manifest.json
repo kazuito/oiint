@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Oiint",
+  "version": "1.0.0",
+  "description": "Open image in new tab on Google search",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["jquery.js", "content-script.js"]
+    }
+  ]
+}
